@@ -40,7 +40,6 @@
     height: 300px;
 }
 .h1-sumate{
-    background-color: white;
     color: #213f99;
     font-family: "poppins"
 }
@@ -97,9 +96,9 @@
     margin: .625rem;
 }
 .card .card-img{
-width: 100%;
-height: 60%;
-padding: .3125rem;
+    width: 100%;
+    height: 60%;
+    padding: .3125rem;
 }
 .card .card-img img{
     width: 100%;
@@ -107,14 +106,14 @@ padding: .3125rem;
     object-fit: contain;
 }
 .card-info button{
-background-color: #fcfdff;
-font-size: small;
-font-family: "poppins";
-font-weight: 600;
-color: #213f99;
-padding: 8px 4px;
-background-color: whitesmoke;
-border-color: #213f99;
+    background-color: #fcfdff;
+    font-size: small;
+    font-family: "poppins";
+    font-weight: 600;
+    color: #213f99;
+    padding: 8px 4px;
+    background-color: whitesmoke;
+    border-color: #213f99;
 }
 .footer-redes{
     background-color: #e1b0ac;
@@ -132,8 +131,28 @@ border-color: #213f99;
     text-align: center;
     line-height: 100px ;
 }
-.form{
+.form-uno{
     background-color: #e1b0ac;
+    color: #213f99;
+    font-family: "poppins";
+    text-align: center;
+    width: 100%;
+    height: 800px;
+    background-position: center;
+    padding: 1.25rem;
+    border: 1px;
+    margin: auto;
+    border-radius: 4px;
+}
+.ul-contactanos{
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+}    
+.contactanos-palabra{
+    color: #213f99;
+    font-family: "poppins";
+
 }
 @media (max-width: 64rem){
 
