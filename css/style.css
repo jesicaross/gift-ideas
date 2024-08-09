@@ -11,6 +11,12 @@
     font-family: "poppins";
     color: #213f99;
 }
+.foto-regalo{
+    display: flex;
+}
+.foto-corazon{
+    display: flex;
+}
 .nosotros-uno {
     color: #213f99;
     font-family: "poppins";
@@ -154,11 +160,29 @@
     font-family: "poppins";
 
 }
+label{
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+input{
+    width: 300px;
+    box-sizing: border-box;
+    height: 30px;
+    line-height: 100px;
+}
 @media (max-width: 64rem){
+    .header-index{
+        flex-direction: column;
+    }
+    .foto-regalo{
+        flex-direction:column;
+    }
 
+    }
 }
 @media (media-width: 48rem){
-    header {
+    .header-index {
         flex-direction: column;
     }
 }
