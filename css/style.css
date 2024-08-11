@@ -12,10 +12,26 @@
     color: #213f99;
 }
 .foto-regalo{
+    background-color: #e1b0ac;
+    width: 100%;
+    height: 31.25rem;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/img/regalo.png);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .foto-corazon{
+    background-color: #e1b0ac;
+    width: 100%;
+    height: 31.25rem;
     display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-image: url(../assets/img/corazones.png);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .nosotros-uno {
     color: #213f99;
@@ -176,9 +192,13 @@ input{
         flex-direction: column;
     }
     .foto-regalo{
-        flex-direction:column;
+        height: 25rem;
+        background-size: contain;
     }
-
+    .foto-corazon{
+        height: 25rem;
+        background-size: contain;
+    }
     }
 }
 @media (media-width: 48rem){
