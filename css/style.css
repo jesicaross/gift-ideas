@@ -14,24 +14,56 @@
 .foto-regalo{
     background-color: #e1b0ac;
     width: 100%;
-    height: 31.25rem;
+    height: 18.75rem;
     display: flex;
     justify-content: center;
     align-items: center;
     background-image: url(../assets/img/regalo.png);
     background-position: center;
     background-repeat: no-repeat;
+    background-position: top;
 }
-.foto-corazon{
-    background-color: #e1b0ac;
+.gift-ideas{
     width: 100%;
-    height: 31.25rem;
+    height: 25rem;
+    background-color: #e1b0ac;
+    background-image: url(../assets/img/regalodos.png);
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
-    align-items: center; 
-    background-image: url(../assets/img/corazones.png);
+}
+.h1-gift{
+    width: 100%;
+    height: 18.75rem;
+    color: #213f99;
+    font-family: "poppins";    
+    font-size:x-large;
+    line-height: 200%;
+    text-align:center;  
+    display: flex;
+    padding: 50px 300px;
+}
+.h2-gift{
+    width: 100%;
+    height: 18.75rem;
+    color: #213f99;
+    font-family: "poppins";    
+    font-size:x-large;
+    line-height: 200%;
+    text-align:center;
+    display: flex;
+    padding: 80px 400px;
+}
+.gift-ideasdos{
+    background-color: #e1b0ac;
+    width: 100%;
+    height: 18.75rem;
+    background-image: url(../assets/img/emporende.png);
+    display: flex;
+    justify-content: center;
     background-position: center;
     background-repeat: no-repeat;
+    display: flex;
 }
 .nosotros-uno {
     color: #213f99;
@@ -40,8 +72,8 @@
 .nosotros-encuentro{
     background-color: #e1b0ac;
     width: 100%;
-    height: 1000px;
- }  
+    height: 1600px;
+}  
 .nosotros-texto{
     font-family: "poppins";
     color: #213f99;
@@ -51,13 +83,24 @@
     text-align: justify;  
     font-weight:400;
     padding: 20px;
-    margin: 5px;;
+    margin: 5px;
+}
+.nosotros-gift{
+    width: 100%;
+    height: 300px;
+    background-color: #e1b0ac;
+    background-image: url(../assets/img/gift\ card.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
 }
 .nosotros-imagen{
     background-color: #e1b0ac;
     background-image: url(../assets/img/nosotrosimagen.png);
     background-position: center;
     background-size: contain;
+    background-repeat: no-repeat;
     width: 100%;
     height: 300px;
 }
@@ -65,21 +108,33 @@
     color: #213f99;
     font-family: "poppins"
 }
-.h2-sumate {
+.p-sumate {
     background-color: #e1b0ac;
     color: #213f99;
     font-family: "poppins";
     text-align: center;
     font-weight: 400;
     line-height: 200%;
+    font-size: x-large;
 }
 .sumate-imagen {
     background-color: #e1b0ac;
     background-image: url(../assets/img/sumate.png);
     background-position: center;
     background-size: contain;
+    background-repeat: no-repeat;
     width: 100%;
     height: 300px;
+}
+.button-sumate{
+    background-color:#e1b0ac;
+}
+.button-sumateuno{
+    background-color:#fcfdff;
+    color: #fcfdff;
+    font-family: "poppins";
+    padding: 8px 4px;
+    margin: 50px 600px;
 }
 .gift-cardsa {
     background-color: white;
@@ -176,6 +231,12 @@
     font-family: "poppins";
 
 }
+.contactanos-datos{
+    background-color: #e1b0ac;
+    color: #213f99;
+    font-family: "poppins";
+    text-align: center;
+}
 label{
     display: inline-block;
     width: 90px;
@@ -187,22 +248,145 @@ input{
     height: 30px;
     line-height: 100px;
 }
-@media (max-width: 64rem){
+@media (max-width: 1024px){
     .header-index{
         flex-direction: column;
     }
     .foto-regalo{
+        width: 100%;
         height: 25rem;
         background-size: contain;
     }
-    .foto-corazon{
-        height: 25rem;
+    .gift-ideas{
+        width: 100%;
         background-size: contain;
     }
+    .h1-gift{
+        width: 100%;
+        padding: 50px;
+        
     }
-}
-@media (media-width: 48rem){
+    .gift-ideasdos{
+        width: 100%;
+        height: 800px;
+        background-size: cover;
+    }
+    .sumate-imagen{
+        width: 100%;
+        height: 800px;
+        background-size: auto;
+        padding: 50px;
+    }
+    }
+@media (max-width: 768px){
     .header-index {
         flex-direction: column;
     }
+    .foto-regalo{
+        width: 100%;
+        height: 400px;
+        background-size: contain;
+    }
+    .gift-ideas{
+        width: 100%;
+        height: 400px;
+        background-size: contain;
+    }
+    .h1-gift{
+        width: 100%;
+        padding: 10px;
+        
+    }
+    .gift-ideasdos{
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+    }
+    .h2-gift{
+        width: 100%;
+        height: 400px;
+        padding: 100px 220px;
+    }
+    .nosotros-encuentro{
+        width: 100%;
+        height: 2000px;
+    }
+    .sumate-imagen{
+        width: 100%;
+        height: 1000px;
+        background-size: contain;
+    }
 }
+@media (max-width: 425px){
+    .header-index{
+        width: 100%;
+        flex-direction: column;
+        margin: 0px 20px;
+        font-size: medium;
+    }
+    .navbar{
+        font-size: 65%;
+    }
+    .foto-regalo{
+        width: 100%;
+        height: 200px;
+        background-size: contain;
+    }
+    .gift-ideas{
+        width: 100%;
+        height: 200px;
+        background-size: contain;
+    }
+    .h1-gift{
+        width: 100%;
+        height: 50px;
+        padding: 10px;
+        font-size: small;
+        
+    }
+    .gift-ideasdos{
+        width: 100%;
+        height: 400px;
+        background-size: contain;
+    }
+    .h2-gift{
+        width: 100%;
+        height: 50px;
+        padding: 100px 150px;
+        font-size: smaller;
+    }
+    .nosotros-encuentro{
+        width: 100%;
+        height: 1600px;
+    }  
+    .nosotros-texto{
+        font-size:small; 
+    }
+    .nosotros-gift{
+        width: 100%;
+        height: 300px;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+    }
+    .nosotros-imagen{
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 300px;
+    }
+    .sumate-imagen {
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 600px;
+    }
+    .p-sumate {
+        font-size: medium;
+    }
+    
