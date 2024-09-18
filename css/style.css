@@ -104,9 +104,21 @@
     width: 100%;
     height: 300px;
 }
+.sumate{
+    width: 100%;
+}
 .h1-sumate{
     color: #213f99;
-    font-family: "poppins"
+    font-family: "poppins";
+    font-size:xx-large;
+}
+.h2-sumate{
+    color: #213f99;
+    background-color: #e1b0ac;
+    font-family: "poppins";
+    font-size: x-large;
+    text-align: center;
+    line-height: 300%;
 }
 .p-sumate {
     background-color: #e1b0ac;
@@ -116,8 +128,11 @@
     font-weight: 400;
     line-height: 200%;
     font-size: x-large;
+    display: flex;
+    justify-content: center;
+    margin: auto;
 }
-.sumate-imagen {
+.sumate-imagen{
     background-color: #e1b0ac;
     background-image: url(../assets/img/sumate.png);
     background-position: center;
@@ -125,16 +140,8 @@
     background-repeat: no-repeat;
     width: 100%;
     height: 300px;
-}
-.button-sumate{
-    background-color:#e1b0ac;
-}
-.button-sumateuno{
-    background-color:#fcfdff;
-    color: #fcfdff;
-    font-family: "poppins";
-    padding: 8px 4px;
-    margin: 50px 600px;
+    display: flex;
+    justify-content: center;
 }
 .gift-cardsa {
     background-color: white;
@@ -273,13 +280,34 @@ input{
     }
     .sumate-imagen{
         width: 100%;
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+        background-position: top;
+        display: flex;
+    }
+    .p-sumate{
+        width: 100%;
         height: 800px;
-        background-size: auto;
+        font-weight: 400;
+        line-height: 300%;
+        font-size:x-large;
         padding: 50px;
     }
+    .form-uno{
+        width: 100%;
+        height: 1000px;
+        background-position: center;
     }
+    .footer-redes{
+        background-position: left;
+        background-size:3%;
+        width: 100%;
+        height: 100px;
+        background-position: 35%;
+}
 @media (max-width: 768px){
-    .header-index {
+    .header-index{
         flex-direction: column;
     }
     .foto-regalo{
@@ -295,7 +323,6 @@ input{
     .h1-gift{
         width: 100%;
         padding: 10px;
-        
     }
     .gift-ideasdos{
         width: 100%;
@@ -313,80 +340,109 @@ input{
     }
     .sumate-imagen{
         width: 100%;
-        height: 1000px;
+        height: 200px;
         background-size: contain;
+        background-position: center;
+        background-position: top;
     }
-}
+    .p-sumate{
+        width: 100%;
+        height: 900px;
+        font-weight: 400;
+        line-height: 200%;
+        font-size: x-large;
+    }
+    .footer-redes{
+        background-position: left;
+        background-size:3%;
+        width: 100%;
+        height: 100px;
+        background-position: 30%;
+    }
 @media (max-width: 425px){
-    .header-index{
-        width: 100%;
-        flex-direction: column;
-        margin: 0px 20px;
-        font-size: medium;
-    }
-    .navbar{
-        font-size: 65%;
-    }
-    .foto-regalo{
-        width: 100%;
-        height: 200px;
-        background-size: contain;
-    }
-    .gift-ideas{
-        width: 100%;
-        height: 200px;
-        background-size: contain;
-    }
-    .h1-gift{
-        width: 100%;
-        height: 50px;
-        padding: 10px;
-        font-size: small;
-        
-    }
-    .gift-ideasdos{
-        width: 100%;
-        height: 400px;
-        background-size: contain;
-    }
-    .h2-gift{
-        width: 100%;
-        height: 50px;
-        padding: 100px 150px;
-        font-size: smaller;
-    }
-    .nosotros-encuentro{
-        width: 100%;
-        height: 1600px;
-    }  
-    .nosotros-texto{
-        font-size:small; 
-    }
-    .nosotros-gift{
-        width: 100%;
-        height: 300px;
-        background-repeat: no-repeat;
-        background-position: center;
-        display: flex;
-        justify-content: center;
-    }
-    .nosotros-imagen{
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        width: 100%;
-        height: 300px;
-    }
-    .sumate-imagen {
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        height: 600px;
-    }
-    .p-sumate {
-        font-size: medium;
-    }
+.header-index{
+    width: 100%;
+    flex-direction: column;
+    margin: 0px 20px;
+    font-size: medium;
+}
+.navbar{
+    font-size: 65%;
+}
+.foto-regalo{
+    width: 100%;
+    height: 200px;
+    background-size: contain;
+}
+.gift-ideas{
+    width: 100%;
+    height: 200px;
+    background-size: contain;
+}
+.h1-gift{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    font-size: small;
     
+}
+.gift-ideasdos{
+    width: 100%;
+    height: 400px;
+    background-size: contain;
+}
+.h2-gift{
+    width: 100%;
+    height: 50px;
+    padding: 100px 150px;
+    font-size: smaller;
+}
+.nosotros-encuentro{
+    width: 100%;
+    height: 1600px;
+}  
+.nosotros-texto{
+    font-size:small; 
+}
+.nosotros-gift{
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+.nosotros-imagen{
+    background-position: top;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+}
+.sumate-imagen{
+    width: 100%;
+    height: 100px;
+    background-size: contain;
+    background-position: center;
+    background-position: top;
+}
+.h2-sumate{
+    width: 100%;
+    height: 20px;
+}
+.p-sumate{
+    width: 100%;
+    height: 1000px;
+    font-weight: 400;
+    line-height: 200%;
+    font-size:large;
+}
+.footer-redes{
+    background-position: left;
+    background-size:5%;
+    width: 100%;
+    height: 100px;
+    background-position: 18%;
+}
+
